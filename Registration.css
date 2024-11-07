@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.registration-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: auto; /* Allows height to adjust based on content */
+    max-height: 600px; /* Set a maximum height to prevent it from becoming too tall */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    transform: translateY(-50%);
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px; /* Increase padding for larger text boxes */
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.terms-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.terms-group input {
+    margin-right: 5px;
+}
+
+.register-button {
+    width: 100%;
+    padding: 12px; /* Increase padding for a larger button */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px; /* Optional: Increase font size for better readability */
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+}
+
+.or-join-with {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+}
+
+.or-join-with .divider {
+    height: 1px;
+    background-color: #ccc;
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.or-join-with p {
+    margin: 0;
+    padding: 0 10px;
+    background-color: #fff;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;  /* Center the buttons */
+    gap: 20px; /* Add space between the buttons */
+}
+
+.social-button {
+    width: 50px; /* Increase size of the buttons */
+    height: 50px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 50%; /* Make buttons round */
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-button i {
+    font-size: 24px;
+}
+
+.social-button.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.social-button.google {
+    background-color: #db4437;
+    color: white;
+}
+
+.social-button:hover {
+    background-color: #e4e4e4;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+.gender-group {
+    margin-bottom: 15px;
+}
+
+.gender-group label {
+    font-weight: bold;
+}
+
+.gender-options {
+    display: flex;
+    justify-content: space-between; /* Distribute the options evenly */
+    margin-top: 5px;
+}
+
+.gender-options label {
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.gender-options input[type="radio"] {
+    margin-right: 5px;
+}

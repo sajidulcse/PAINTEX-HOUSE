@@ -1,0 +1,383 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    left: 60px;
+    width: 160px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.header-text {
+    margin-left: 70px; /* Adjust if needed to make space for the logo */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 14px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.cart-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#cart-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Optional: add some spacing if needed */
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    display: block; /* Updated to show when there are items */
+}
+
+
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+#about {
+    background-color: #9cb3c7; /* Light blue background for the About Us section */
+}
+
+
+#products {
+    background-color: #e6ffe6; /* Light green background for the Products section */
+}
+
+#contact {
+    background-color: #9cb3c7; /* Light pink background for the Contact section */
+    padding-bottom: 120px; /* Add padding to make space for the footer */
+}
+
+.container {
+    max-width: auto;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#about .container {
+    background-color: #e0f7fa; /* Light cyan background for the About Us box */
+}
+
+#products .container {
+    background-color: #f1f8e9; /* Light green background for the Products box */
+}
+
+#contact .container {
+    background-color: #fce4ec; /* Light pink background for the Contact box */
+}
+
+.container h2 {
+    margin-top: 0;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 220px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+   
+}
+
+.product a {
+
+    text-decoration: none;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+.product p {
+    color: #555;
+}
+
+.old-price {
+    color: red;
+    font-weight: bold;
+}
+.new-price {
+    color: green;
+    font-weight: bold;
+}
+.add-to-cart {
+     background-color: #bcee16;
+     color: rgb(0, 0, 0);
+     border: none;
+     padding: 10px 15px;
+      cursor: pointer;
+     font-weight: bold;
+}
+ .add-to-cart:hover {
+      background-color: #8dbe1c;
+}
+
+/* Add some basic styling for the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+   
+}
+
+.dropdown .dropbtn i {
+    margin-right: 8px; /* Adjust the value for the desired spacing */
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 50;
+    left: 0px;
+    margin-top: 10px; /* Eliminate gap between the button and dropdown */
+}
+
+.dropdown-content::before {
+    content: '';
+    position: absolute;
+    top: -8px; /* Adjust the position of the arrow */
+    left: 20px; /* Adjust the horizontal position of the arrow */
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #f9f9f9; /* Arrow color matching the dropdown background */
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #e3d1d1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #575757;
+}
+
+/* Prevent section movement */
+.dropdown-content {
+    margin-top: 5px; /* Adjust as needed */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Popup Styles */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    right: 0; /* Position popup to the right */
+    top: 0;
+    width: 400px; /* Adjust width as needed */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+    z-index: 1000; /* Make sure it's on top */
+    transform: translateX(100%); /* Initially off-screen */
+    transition: transform 0.2s ease-in-out; /* Smooth sliding effect */
+}
+
+.popup-content {
+    position: relative;
+    background-color: #fff;
+    height: 100%;
+    overflow: auto;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Optional shadow for better visibility */
+    display: flex;
+    flex-direction: column;
+}
+
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute; /* Position it relative to .popup-content */
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.popup h2 {
+    margin: 0; /* Remove default margin for the title */
+    padding-right: 50px; /* Make space for the close button */
+}
+
+.cart-items {
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 120px;
+    margin-right: 10px;
+}
+
+.cart-item .item-details {
+    flex-grow: 1;
+}
+
+.cart-item .quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item .quantity-controls button {
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.cart-item .remove-btn {
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart-footer {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: stretch;
+    margin-top: -10px; /* Lift up the footer */
+    padding: 10px; /* Ensure padding for spacing */
+}
+
+.cart-footer p {
+    margin-bottom: 10px; /* Space between subtotal and buttons */
+}
+
+.cart-btn {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px; /* Space between buttons */
+}
+
+.cart-btn:hover {
+    background-color: #0056b3;
+}
+
+
